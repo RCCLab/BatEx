@@ -26,8 +26,8 @@ function roll() {
   rolls++;
 
   let corrNums = 0;
-
-  switch (nums) {
+  console.log(nums);
+  switch (nums[corrNums]) {
     case args[0]:
       corrNums++;
       break;
