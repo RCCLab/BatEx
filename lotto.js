@@ -15,7 +15,7 @@ function roll() {
     let uniqueNum = true;
 
     for (let x = 0; x < 7; x++) {
-      if (nums[x] != randNum) {
+      if (nums[x] == randNum) {
         uniqueNum = false;
       }
     }
@@ -27,31 +27,33 @@ function roll() {
   rolls++;
   let corrNums = 0;
 
-  switch (nums[corrNums]) {
-    case args[0]:
-      corrNums++;
-      break;
-    case args[1]:
-      corrNums++;
-      break;
-    case args[2]:
-      corrNums++;
-      break;
-    case args[3]:
-      corrNums++;
-      break;
-    case args[4]:
-      corrNums++;
-      break;
-    case args[5]:
-      corrNums++;
-      break;
-    case args[6]:
-      corrNums++;
-      break;
-    case args[7]:
-      corrNums++;
-      break;
+  for (let o = 0; o < nums.length; o++) {
+    switch (o) {
+      case args[0]:
+        corrNums++;
+        break;
+      case args[1]:
+        corrNums++;
+        break;
+      case args[2]:
+        corrNums++;
+        break;
+      case args[3]:
+        corrNums++;
+        break;
+      case args[4]:
+        corrNums++;
+        break;
+      case args[5]:
+        corrNums++;
+        break;
+      case args[6]:
+        corrNums++;
+        break;
+      case args[7]:
+        corrNums++;
+        break;
+    }
   }
 
   if (corrNums == 7) {
