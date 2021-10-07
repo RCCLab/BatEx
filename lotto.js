@@ -28,7 +28,7 @@ function roll() {
   let corrNums = 0;
 
   for (let o = 0; o < nums.length; o++) {
-    switch (o) {
+    switch (nums[o]) {
       case args[0]:
         corrNums++;
         break;
