@@ -14,19 +14,20 @@ function roll() {
     let randNum = Math.floor(Math.random() * 40);
     let uniqueNum = true;
     for (let x = 0; x < 7; x++) {
-      if (nums[x != randNum]) {
+      if (nums[x] != randNum) {
         uniqueNum = true;
       }
     }
     if (uniqueNum) {
       nums[i] = randNum;
     }
+
+    console.log(nums);
   }
 
   rolls++;
-
   let corrNums = 0;
-  console.log(nums);
+
   switch (nums[corrNums]) {
     case args[0]:
       corrNums++;
