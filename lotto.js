@@ -13,16 +13,15 @@ function roll() {
   for (let i = 0; i < 7; i++) {
     let randNum = Math.floor(Math.random() * 40);
     let uniqueNum = true;
+
     for (let x = 0; x < 7; x++) {
       if (nums[x] != randNum) {
-        uniqueNum = true;
+        uniqueNum = false;
       }
     }
     if (uniqueNum) {
       nums[i] = randNum;
     }
-
-    console.log(nums);
   }
 
   rolls++;
